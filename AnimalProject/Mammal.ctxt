@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Mammal
+comment1.params=
+comment1.target=Mammal()
+comment2.params=hair
+comment2.target=Mammal(boolean)
+comment3.params=
+comment3.target=java.lang.String\ toString()
+numComments=4

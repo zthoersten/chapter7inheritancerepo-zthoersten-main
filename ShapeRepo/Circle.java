@@ -7,6 +7,11 @@ import TurtleGraphics.Pen;
 
 public class Circle extends Shape {
     private double radius;
+    
+    public Circle(double x, double y) {
+        this.xPos = x;
+        this.yPos = y;
+    }
 
     public void draw(Pen p) {
         double side = 2.0 * Math.PI * radius / 120.0;
@@ -26,6 +31,10 @@ public class Circle extends Shape {
     }
 
     public String toString() {
+        //
+    }
+    
+    public double getArea() {
         //
     }
 }
