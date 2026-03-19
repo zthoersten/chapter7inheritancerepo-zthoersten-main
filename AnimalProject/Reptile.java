@@ -23,7 +23,7 @@ public abstract class Reptile extends Animal {
         super("reptile");
         numberOfLegs = n_o_L;
     }
-
+    
     /**-----------------------------------------------------------------
     *  Returns this Reptiles number of Legs
     /*/

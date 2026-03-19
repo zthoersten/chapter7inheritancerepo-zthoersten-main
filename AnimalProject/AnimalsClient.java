@@ -10,8 +10,8 @@ public class AnimalsClient {
         //System.out.println(sue.getType());
         //System.out.println(sue);
         
-        Snake putin = new Snake(5);
+        Fish theHumbleGoldfish = new Goldfish();
         
-        System.out.println(putin);
+        System.out.println(theHumbleGoldfish);
     }
 }
