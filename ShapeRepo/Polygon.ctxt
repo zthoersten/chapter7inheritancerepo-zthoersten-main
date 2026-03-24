@@ -1,7 +1,7 @@
 #BlueJ class context
-comment0.target=Square
-comment1.params=x\ y\ length
-comment1.target=Square(double,\ double,\ int)
+comment0.target=Polygon
+comment1.params=x\ y\ length\ numSides
+comment1.target=Polygon(double,\ double,\ int,\ int)
 comment2.params=
 comment2.target=double\ getArea()
 comment3.params=pen

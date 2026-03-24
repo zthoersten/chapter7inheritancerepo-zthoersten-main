@@ -1,21 +1,22 @@
 import TurtleGraphics.Pen;
 
-public class Square extends Shape {
-    private int length;
+public class Polygon extends Shape {
+    private int length, numSides;
     
-    public Square(double x, double y, int length) {
+    public Polygon(double x, double y, int length, int numSides) {
         super(x, y);
         this.length = length;
+        this.numSides = numSides;
     }
     
     public double getArea() {
-        return length * length;
+        return 0.25 * numSides * length * length / Math.tan(Math.PI / numSides);
     }
     
     public void draw(Pen pen) {
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < numSides; i++) {
             pen.move(length);
-            pen.turn(90);
+            pen.turn(360.0 / numSides);
         }
     }
     

@@ -1,7 +1,7 @@
 import TurtleGraphics.Pen;
 
 public abstract class Shape {
-    private double xPos, yPos;
+    protected double xPos, yPos;
 
     public Shape(double x, double y) {}
 
@@ -14,9 +14,9 @@ public abstract class Shape {
         return this.yPos;
     }
     
-    //public void move(double xLoc, double yLoc);
+    public abstract void move(double xLoc, double yLoc);
     // increase the size by the factor
-    //public void stretchby (double factor);
+    public abstract void stretchby (double factor);
 
     public abstract double getArea();
 

@@ -1,16 +1,10 @@
-//Name
-//Date
-//program
-//Program Description
-
 import TurtleGraphics.Pen;
 
 public class Circle extends Shape {
     private double radius;
     
     public Circle(double x, double y) {
-        this.xPos = x;
-        this.yPos = y;
+        super(x, y);
     }
 
     public void draw(Pen p) {
@@ -27,14 +21,19 @@ public class Circle extends Shape {
     }
 
     public double getRadius() {
-        //
-    }
-
-    public String toString() {
-        //
+        return this.radius;
     }
     
     public double getArea() {
-        //
+        return Math.PI * radius * radius;
+    }
+    
+    public void move(double x, double y) {
+        xPos = x;
+        yPos = y;
+    }
+    
+    public void stretchby(double factor) {
+        radius *= factor;
     }
 }
