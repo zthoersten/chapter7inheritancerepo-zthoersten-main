@@ -7,10 +7,12 @@ public class TestShapes {
         StandardPen pen = new StandardPen();
         Scanner scanner = new Scanner(System.in);
         
-        Polygon shape = new Polygon(0, 0, 200, 16);
-        shape.draw(pen);
+        Wheel wheel = new Wheel(0, 0, 50, 5);
+        wheel.draw(pen);
         
-        System.out.print("Press any key to continue");
-        scanner.nextLine();
+        wheel.move(-300, -300);
+        wheel.stretchby(1.5);
+        
+        wheel.draw(pen);
     }
 }

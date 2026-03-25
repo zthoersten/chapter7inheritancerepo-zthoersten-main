@@ -13,10 +13,15 @@ public class Square extends Shape {
     }
     
     public void draw(Pen pen) {
+        pen.up();
+        pen.move(xPos, yPos);
+        pen.setDirection(0);
+        pen.down();
         for (int i = 0; i < 4; i++) {
             pen.move(length);
             pen.turn(90);
         }
+        pen.up();
     }
     
     public void move(double xPos, double yPos) {

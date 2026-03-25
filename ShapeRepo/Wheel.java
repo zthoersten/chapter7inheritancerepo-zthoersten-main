@@ -1,11 +1,13 @@
 import TurtleGraphics.Pen;
 
-public class Circle extends Shape {
+public class Wheel extends Circle {
     private double radius;
+    private int spokes;
     
-    public Circle(double x, double y, double r) {
-        super(x, y);
+    public Wheel(double x, double y, double r, int spokes) {
+        super(x, y, r);
         radius = r;
+        this.spokes = spokes;
     }
 
     public void draw(Pen p) {
@@ -18,6 +20,15 @@ public class Circle extends Shape {
         for (int i = 0; i < 120; i++) {
             p.move(side);
             p.turn(3);
+        }
+        
+        double angle = 360.0 / spokes;
+        for (int i = 0; i < spokes; i++) {
+            p.up();
+            p.move(xPos, yPos);
+            p.setDirection(angle * i);
+            p.down();
+            p.move(radius);
         }
     }
 

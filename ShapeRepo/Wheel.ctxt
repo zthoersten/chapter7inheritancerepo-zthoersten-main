@@ -1,7 +1,7 @@
 #BlueJ class context
-comment0.target=Circle
-comment1.params=x\ y\ r
-comment1.target=Circle(double,\ double,\ double)
+comment0.target=Wheel
+comment1.params=x\ y\ r\ spokes
+comment1.target=Wheel(double,\ double,\ double,\ int)
 comment2.params=p
 comment2.target=void\ draw(TurtleGraphics.Pen)
 comment3.params=
