@@ -7,8 +7,11 @@ public class TestShapes {
         StandardPen pen = new StandardPen();
         Scanner scanner = new Scanner(System.in);
         
-        Wheel wheel = new Wheel(0, 0, 50, 5);
+        Wheel wheel = new Wheel(0, 0, 50, 12);
         wheel.draw(pen);
+        
+        System.out.println("Press enter to continue");
+        scanner.nextLine();
         
         wheel.move(-300, -300);
         wheel.stretchby(1.5);
